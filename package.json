@@ -2,6 +2,7 @@
   "name": "feathers-fashion",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://chandimap.github.io/Feathers-Fashion-Store",
   "dependencies": {
     "axios": "^0.18.0",
     "enzyme": "^3.8.0",
@@ -19,6 +20,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -32,5 +35,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^3.1.0"
+  }
 }
